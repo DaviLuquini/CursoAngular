@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CardsModule } from './cards/cards.module';
 
 import { AppComponent } from './app.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 
@@ -16,7 +17,9 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     CardsModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
