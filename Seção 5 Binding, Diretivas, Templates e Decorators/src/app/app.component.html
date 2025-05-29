@@ -1,15 +1,11 @@
-<input id="meu-input" [value]="inputText" [type]="inputType" [disabled]="isDisabled" />
+<!-- Navigation Bar -->
+<nav>
+  <a routerLink="/">Property Events Binding</a> |
+  <a routerLink="/attribute-binding">Attribute Binding</a> |
+  <a routerLink="/style-binding">Style Binding</a>
+</nav>
 
-<br />
+<!-- Router Outlet -->
+<router-outlet></router-outlet>
 
-<button (click)="enableInput()">Habilitar</button>
-<button (click)="disableInput()">Desabilitar</button>
 
-<br />
-
-<button (click)="setPasswordTypeInput()">Senha</button>
-<button (click)="setTextTypeInput()">Texto</button>
-
-<br />
-
-<button (click)="logInputText()">Log</button>

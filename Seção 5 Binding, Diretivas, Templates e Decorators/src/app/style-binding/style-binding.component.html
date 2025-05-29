@@ -1,0 +1,9 @@
+<div class="style-binding">
+    <button [style.width]="buttonWidth" [style.backgroundColor]="buttonBackgroundColor">Style Button</button>
+
+    <button [style]="styleObj">Style Button</button>
+
+    <button [style.width]="'190px'" (click)="updateStyleButtonWrong()">Update Style Button Wrong</button>
+
+    <button [style.width]="'190px'" (click)="updateStyleButtonCorrect()">Update Style Button Correct</button>
+</div>

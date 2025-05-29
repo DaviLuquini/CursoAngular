@@ -1,0 +1,11 @@
+<div class="attribute-binding">
+    <h2>{{title}}</h2>
+
+    <div class="attribute-binding-examples">
+        <button [attr.title]="buttonTitle">Attribute Binding Title</button>
+
+        <button [attr.disabled]="buttonDisabled ? true : null">{{buttonDisabledText}}</button>
+
+        <button (click)="onButtonClick()">Change Disabled Button Attributes</button>
+    </div>
+</div>
