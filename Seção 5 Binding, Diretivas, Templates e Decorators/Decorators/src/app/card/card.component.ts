@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  @Input() planType: string = '';
-  @Input() planPrice: number = 0;
+  @Input({ required: true }) planType: string = '';
+  @Input({ required: true, alias: 'planPrice' }) planPrice: number = 0;
 }
