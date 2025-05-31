@@ -6,13 +6,15 @@ import { AttributeBindingComponent } from './attribute-binding/attribute-binding
 import { AppRoutingModule } from './app-routing.module';
 import { PropertyEventsBindingComponent } from './property-events-binding/property-events-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { ClassBindingComponent } from './class-binding/class-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AttributeBindingComponent,
     PropertyEventsBindingComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    ClassBindingComponent
   ],
   imports: [
     BrowserModule,
