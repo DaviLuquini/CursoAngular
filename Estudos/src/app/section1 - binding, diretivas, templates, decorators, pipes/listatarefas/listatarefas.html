@@ -1,0 +1,16 @@
+<div class="lista-tarefas">
+    @for (tarefa of tarefas; track i; let i = $index) {
+    <div class="container-input">
+        @if (i == 0) {
+            <input id="input" [(ngModel)]="tarefas[i]" placeholder="escreva aqui...">
+        }
+        @else {
+            <input id="input" [(ngModel)]="tarefas[i]">
+        }
+        @if (tarefa != '') {
+            <button (click)="removerTarefa(i)">X</button>
+        }
+    </div>
+    }
+</div>
+<h1>Tarefas restante: {{ tarefas | tarefasrestantes }}</h1>
