@@ -8,12 +8,17 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class TarefasrestantesPipe implements PipeTransform {
   transform(tarefas: string[]): number {
     let tarefasRestantes = 0;
-    for (let i = 0; i < tarefas.length; i++) {
-      if (tarefas[i] != '') {
+    // for (let i = 0; i < tarefas.length; i++) {
+    //   if (tarefas[i] != '') {
+    //     tarefasRestantes++;
+    //   }
+    // }
+    for (const element of tarefas) {
+      if (element != '') {
         tarefasRestantes++;
       }
     }
-    console.log("hello");
+
     return tarefasRestantes;
   }
 }

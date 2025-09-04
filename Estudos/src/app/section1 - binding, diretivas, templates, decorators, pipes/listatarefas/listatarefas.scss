@@ -24,7 +24,7 @@ input {
 button {
     position: absolute;
     right: 5px;
-    background: #ff4444;
+    background: #2ecd15;
     color: white;
     border: none;
     width: 30px;
@@ -39,5 +39,6 @@ button {
 }
 
 button:hover {
-    background: #cc3333;
+    transition-duration: 500ms;
+    background: #07990a;
 }

@@ -1,16 +1,21 @@
+@if(tarefas.tarefas$ | async; as listaTarefas) {
 <div class="lista-tarefas">
-    @for (tarefa of tarefas; track i; let i = $index) {
+    @for (tarefa of listaTarefas; track i; let i = $index) {
     <div class="container-input">
         @if (i == 0) {
-            <input id="input" [(ngModel)]="tarefas[i]" placeholder="escreva aqui...">
+        <input id="input" [(ngModel)]="listaTarefas[i]" placeholder="escreva aqui...">
         }
         @else {
-            <input id="input" [(ngModel)]="tarefas[i]">
+        <input id="input" [(ngModel)]="listaTarefas[i]">
         }
         @if (tarefa != '') {
-            <button (click)="removerTarefa(i)">X</button>
+        <button (click)="removerTarefa(i)">✓</button>
         }
     </div>
     }
 </div>
-<h1>Tarefas restante: {{ tarefas | tarefasrestantes }}</h1>
+    <h1>Tarefas restante: {{ listaTarefas | tarefasrestantes }}</h1>
+@if(tarefas.tarefasRemovidas(); as tarefasRemovidas) {
+    <h1>Tarefas concluídas: {{ tarefasRemovidas.length }}</h1>
+    }
+}

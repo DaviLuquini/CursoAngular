@@ -1,0 +1,5 @@
+<div class="sections">
+    @for(section of sections; track section; let i = $index) {
+    <button  [routerLink]="'section' + (i + 1)" >{{ section }}</button>
+    }
+</div>

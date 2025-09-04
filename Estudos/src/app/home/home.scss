@@ -1,0 +1,19 @@
+button {
+    width: 350px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 2%;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #922727;
+    background-color: rgba(255, 0, 0, 0.345);
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}

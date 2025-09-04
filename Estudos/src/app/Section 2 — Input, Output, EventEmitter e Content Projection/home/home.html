@@ -1,0 +1,7 @@
+<div class="w-[60%] h-[60%] border-2 border-black flex justify-center items-center">
+    <app-button (clicado)="trocarCor($event)">
+        <div class="rounded-3xl border-0 p-2 font-bold" [ngStyle]="{'background-color': color || 'red'}">
+            Botão Clicado?
+        </div>
+    </app-button>
+</div>
